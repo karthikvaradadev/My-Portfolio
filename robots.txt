@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Sitemap: https://kumarswamy-devops.com/sitemap.xml
+
+# Security Rules
+Disallow: /admin
+Disallow: /config
+Disallow: /private

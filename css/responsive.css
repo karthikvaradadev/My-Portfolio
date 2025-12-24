@@ -1,0 +1,271 @@
+/* =========================================
+   RESPONSIVE DESIGN AUTOMATION
+   (Mobile, Tablet, Desktop, Wide Screens)
+   ========================================= */
+
+/* --- Tablet Premium Refinement (Max Width: 1100px) --- */
+@media screen and (max-width: 1100px) {
+    .container {
+        padding: 0 2rem;
+        max-width: 95%;
+    }
+
+    .hero-text .title {
+        font-size: 3.5rem;
+    }
+
+    /* Fix Auto-Adjust for Tablet Grids */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    /* Center the last item if odd */
+    .stats-grid .stat-item:last-child:nth-child(odd) {
+        grid-column: span 2;
+    }
+
+    .services-grid,
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Force 2 columns on tablet */
+        gap: 2rem;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+        /* Stack about section */
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .about-content {
+        order: 2;
+        /* Text below visual */
+    }
+
+    .about-visual {
+        order: 1;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        height: 350px;
+    }
+
+    /* Ensure Hero Image Fits */
+    .hero-image-wrapper {
+        justify-content: center;
+    }
+}
+
+/* --- Mobile Premium Refinement (Max Width: 768px) --- */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 15px;
+        /* Better readability */
+    }
+
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    /* Hero Section - Mobile Polish */
+    .hero-section {
+        padding-top: 120px;
+        text-align: center;
+        min-height: auto;
+        /* Remove vh height constraint */
+        padding-bottom: 60px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .hero-text .subtitle {
+        font-size: 0.8rem;
+        margin: 0 auto 1rem auto;
+        /* Center alignment */
+    }
+
+    .hero-text .title {
+        font-size: 2.8rem;
+        line-height: 1.2;
+    }
+
+    .hero-text .description {
+        font-size: 1rem;
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .footer-content {
+        display: flex;
+        /* Override Grid */
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    /* Reset Grid Alignments for Mobile */
+    .bhuux-branding,
+    .bhuux-core-wrap,
+    .footer-content>div:last-child {
+        justify-self: auto;
+        text-align: center;
+    }
+
+    .branding-prefix {
+        letter-spacing: 1px;
+    }
+
+    .cta-group {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        /* Ensure flex behavior */
+    }
+
+    /* Tab Buttons Response */
+    .project-tabs {
+        gap: 10px;
+        flex-wrap: wrap;
+        /* Allow wrapping */
+        justify-content: center;
+        /* Center align */
+        width: 100%;
+    }
+
+    .tab-btn {
+        flex: 1 1 40%;
+        /* Grow to fill space, at least 40% width */
+        text-align: center;
+        padding: 12px;
+        font-size: 0.85rem;
+    }
+
+    /* Image Handling */
+    .hero-image-wrapper {
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+        transform: scale(0.9);
+        /* Slightly smaller to fit cleanly */
+    }
+
+    .image-frame {
+        width: 100%;
+        max-width: 320px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    /* Stats Grid - 2 Column Clean Layout */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    /* Make the last odd item span full width */
+    .stats-grid .stat-item:nth-child(3) {
+        grid-column: span 2;
+    }
+
+    /* Cards - Premium Mobile Spacing */
+    .services-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .service-card,
+    .project-card {
+        padding: 2rem;
+        /* Reduce padding slightly */
+    }
+
+    .about-visual {
+        height: 300px;
+        /* Adjust visual height */
+    }
+
+    .floating-badge {
+        display: none;
+        /* Hide 3D floating badges on mobile to reduce clutter/overlap */
+    }
+
+    /* Reveal simple badge below image if needed, or keep clean */
+
+    /* Contact Section */
+    .contact-container {
+        padding: 3rem 1.5rem;
+    }
+
+    .contact-icons-centered {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .contact-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+
+    /* Navigation Mobile Override */
+    .glass-nav {
+        padding: 1rem 0;
+    }
+
+    .nav-links {
+        padding-top: 100px;
+        gap: 30px;
+        background: rgba(3, 7, 18, 0.98);
+        /* Solid dark bg for menu */
+        backdrop-filter: blur(20px);
+    }
+}
+
+/* --- Small Mobile (Max Width: 480px) --- */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 1.2rem;
+    }
+
+    .hero-text .title {
+        font-size: 2.5rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        /* Full width buttons on small screens */
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .image-frame {
+        height: 320px;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    /* Hide complex animations if needed for performance */
+    .glow-orb {
+        opacity: 0.3;
+    }
+}

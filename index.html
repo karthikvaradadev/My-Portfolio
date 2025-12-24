@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Architect | Scalable Infrastructure Expert</title>
+
+    <!-- Security Meta Tags -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <!-- Content Security Policy: Allows necessary CDNs and local resources while blocking unauthorized scripts -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; 
+                 script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com; 
+                 style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com https://cdnjs.cloudflare.com; 
+                 font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; 
+                 img-src 'self' data: https:; 
+                 connect-src 'self';">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Freelance DevOps Engineer specializing in AWS, Docker, and Jenkins. Open Source contributor to Linux Kernel and MariaDB.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Outfit:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Performance Prefetching -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://unpkg.com">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Device Sensitivity Class -->
+    <script>
+        (function () {
+            const memory = navigator.deviceMemory || 4;
+            const cores = navigator.hardwareConcurrency || 4;
+            if (memory < 4 || cores <= 4) {
+                document.documentElement.classList.add('low-end');
+            } else {
+                document.documentElement.classList.add('high-end');
+            }
+        })();
+    </script>
+</head>
+
+<body class="premium-dark">
+    <!-- Custom Tactical Cursor -->
+    <div class="custom-cursor"></div>
+
+    <!-- Floating Background Elements -->
+    <canvas id="canvas-bg"></canvas>
+    <div class="bg-pattern"></div>
+    <div class="bg-tech-tags"></div>
+    <div class="circuit-overlay"></div>
+    <div class="scanline"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Navigation -->
+    <header class="glass-nav">
+        <div class="container nav-container">
+            <a data-dest="#home" class="logo">KUMARSWAMY VT<span class="dot">.</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a data-dest="#home" class="active">Home</a></li>
+                    <li><a data-dest="#about">About</a></li>
+                    <li><a data-dest="#services">Services</a></li>
+                    <li><a data-dest="#projects">Projects</a></li>
+                    <li><a data-dest="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a data-dest="#contact" class="btn-primary">Hire Me <i class="fa-solid fa-arrow-right-long"></i></a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <div class="hero-text" data-aos="fade-right">
+                    <h2 class="subtitle">Freelance DevOps Architect</h2>
+                    <h1 class="title">Architecting <span class="gradient-text">Resilient</span><br>Cloud Ecosystems</h1>
+                    <p class="description">
+                        I specialize in designing mission-critical infrastructure and <strong>Zero-Downtime</strong>
+                        pipelines.
+                        Deep expertise in <strong>Kubernetes Orchestration</strong>, <strong>Terraform (IaC)</strong>,
+                        and <strong>AWS Lambda</strong>.
+                        Active core contributor to the <strong>Linux Kernel</strong> memory subsystem and
+                        <strong>MariaDB</strong> stability patches.
+                    </p>
+                    <div class="cta-group">
+                        <a data-dest="#projects" class="btn-primary hover-glow">View Projects</a>
+                        <a data-dest="#contact" class="btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper" data-aos="fade-left" data-aos-delay="200">
+                    <div class="image-frame">
+                        <img src="assets/images/Pic.jpg" alt="Kumarswamy VT Profile" class="hero-img" loading="eager"
+                            decoding="async" width="380" height="480">
+                        <div class="floating-badge badge-1">
+                            <i class="fa-brands fa-aws"></i>
+                            <span>AWS Certified</span>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <i class="fa-brands fa-docker"></i>
+                            <span>Containerization</span>
+                        </div>
+                        <div class="floating-badge badge-3">
+                            <i class="fa-solid fa-code-branch"></i>
+                            <span>CI/CD Architect</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- Corporate Alliances Section -->
+        <section class="alliances-section" data-aos="fade-up">
+            <div class="container">
+                <p class="alliances-label">Strategic Technical Alliances</p>
+                <div class="logo-marquee">
+                    <div class="marquee-content">
+                        <!-- Technical Partners -->
+                        <div class="partner-logo"><i class="fa-brands fa-aws"></i> <span>AWS Cloud</span></div>
+                        <div class="partner-logo"><i class="fa-brands fa-docker"></i> <span>Docker Inc.</span></div>
+                        <div class="partner-logo"><i class="fa-brands fa-linux"></i> <span>Linux Foundation</span></div>
+                        <div class="partner-logo"><i class="fa-solid fa-database"></i> <span>MariaDB</span></div>
+                        <div class="partner-logo"><i class="fa-brands fa-python"></i> <span>Python Org</span></div>
+                        <div class="partner-logo"><i class="fa-brands fa-github"></i> <span>GitHub Ent.</span></div>
+                        <!-- Duplicated for seamless loop -->
+                        <div class="partner-logo"><i class="fa-brands fa-aws"></i> <span>AWS Cloud</span></div>
+                        <div class="partner-logo"><i class="fa-brands fa-docker"></i> <span>Docker Inc.</span></div>
+                        <div class="partner-logo"><i class="fa-brands fa-linux"></i> <span>Linux Foundation</span></div>
+                        <div class="partner-logo"><i class="fa-solid fa-database"></i> <span>MariaDB</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section glass-panel" data-aos="fade-up">
+            <div class="container stats-grid">
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                    <span class="stat-number">500</span><span class="plus">+</span>
+                    <p class="stat-label">Infrastructure Nodes</p>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                    <span class="stat-number">99</span><span class="plus">.9%</span>
+                    <p class="stat-label">System Uptime</p>
+                </div>
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                    <span class="stat-number">200</span><span class="plus">+</span>
+                    <p class="stat-label">Kernel Commits</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credentials & Certifications (New Professional Section) -->
+        <section class="credentials-section" data-aos="fade-up">
+            <div class="container">
+                <div class="section-header center-text">
+                    <h2 class="section-title">Verified Credentials</h2>
+                    <p>Global recognitions for architectural excellence.</p>
+                </div>
+                <div class="certs-grid">
+                    <!-- Cert 1 -->
+                    <div class="cert-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="cert-icon gold"><i class="fa-brands fa-aws"></i></div>
+                        <div class="cert-info">
+                            <h3>AWS Solutions Architect</h3>
+                            <span class="cert-level">Professional Level</span>
+                        </div>
+                    </div>
+                    <!-- Cert 2 -->
+                    <div class="cert-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="cert-icon blue"><i class="fa-solid fa-dharmachakra"></i></div>
+                        <div class="cert-info">
+                            <h3>CKA Administrator</h3>
+                            <span class="cert-level">Kubernetes Expert</span>
+                        </div>
+                    </div>
+                    <!-- Cert 3 -->
+                    <div class="cert-card" data-aos="flip-left" data-aos-delay="300">
+                        <div class="cert-icon red"><i class="fa-brands fa-redhat"></i></div>
+                        <div class="cert-info">
+                            <h3>Red Hat Certified</h3>
+                            <span class="cert-level">Engineer (RHCE)</span>
+                        </div>
+                    </div>
+                    <!-- Cert 4 -->
+                    <div class="cert-card" data-aos="flip-left" data-aos-delay="400">
+                        <div class="cert-icon green"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="cert-info">
+                            <h3>HashiCorp Terraform</h3>
+                            <span class="cert-level">Infrastructure Associate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container about-grid">
+                <div class="about-visual">
+                    <div class="tech-stack-cloud">
+                        <div class="tech-blob blob-1"><i class="fa-brands fa-aws"></i></div>
+                        <div class="tech-blob blob-2"><i class="fa-brands fa-docker"></i></div>
+                        <div class="tech-blob blob-3"><i class="fa-brands fa-linux"></i></div>
+                        <div class="tech-blob blob-4"><i class="fa-brands fa-python"></i></div>
+                        <div class="tech-blob blob-5"><i class="fa-solid fa-server"></i></div>
+                        <div class="tech-blob blob-6"><i class="fa-solid fa-database"></i></div>
+                    </div>
+                    <div class="glass-card experience-card">
+                        <h3>5+ Years</h3>
+                        <p>Of Experience</p>
+                    </div>
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <h2 class="section-title">Beyond the Terminal</h2>
+                    <p>My foundation is built on the philosophy of Open Source; I ensure the tools we rely on are faster
+                        and more secure. Beyond development, I am a Technical Speaker and a veteran of 15+ hackathons,
+                        thriving on solving high-stakes architectural challenges in record time.</p>
+                    <ul class="feature-list">
+                        <li data-aos="fade-up" data-aos-delay="100"><i class="fa-solid fa-server"></i> Resilient
+                            Infrastructure Design</li>
+                        <li data-aos="fade-up" data-aos-delay="200"><i class="fa-solid fa-code-branch"></i> Open Source
+                            Contributor (Linux/MariaDB)</li>
+                        <li data-aos="fade-up" data-aos-delay="300"><i class="fa-solid fa-microchip"></i> High-Stakes
+                            Problem Solver</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header center-text" data-aos="fade-up">
+                    <h2 class="section-title">My Services</h2>
+                    <p>Exclusive services tailored for high-end clients.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card glass-card hover-lift" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="icon-box"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                        <h3>Cloud Solutions</h3>
+                        <p>Architecting secure and scalable AWS environments with high availability.</p>
+                    </div>
+                    <div class="service-card glass-card hover-lift" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="icon-box"><i class="fa-brands fa-docker"></i></div>
+                        <h3>Containerization</h3>
+                        <p>Deploying complex microservices using Docker and Kubernetes orchestrations.</p>
+                    </div>
+                    <div class="service-card glass-card hover-lift" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="icon-box"><i class="fa-solid fa-infinity"></i></div>
+                        <h3>CI/CD Mastery</h3>
+                        <p>Automating deployment pipelines with Jenkins for lightning-fast delivery.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header center-text" data-aos="fade-up">
+                    <h2 class="section-title">Latest Deployments</h2>
+                    <p>A showcase of high-stakes architectural solutions.</p>
+                </div>
+
+                <!-- Tab Control -->
+                <div class="project-tabs" data-aos="fade-up" data-aos-delay="100">
+                    <button class="tab-btn active" data-filter="all">All Sets</button>
+                    <button class="tab-btn" data-filter="infra">Infrastructure</button>
+                    <button class="tab-btn" data-filter="auto">Automation</button>
+                    <button class="tab-btn" data-filter="sec">Security</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-category="infra" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon-box"><i class="fa-solid fa-network-wired"></i></div>
+                        <span class="project-tag">Cloud Infrastructure</span>
+                        <h3>Global Edge-Cached CDN</h3>
+                        <p>High-performance global delivery utilizing AWS CloudFront with geo-replication and automated
+                            edge caching policies.</p>
+                        <ul class="project-tech-stack">
+                            <li>#Terraform</li>
+                            <li>#AWS_S3</li>
+                            <li>#CloudFront</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-category="auto" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon-box"><i class="fa-solid fa-gears"></i></div>
+                        <span class="project-tag">DevOps Automation</span>
+                        <h3>Enterprise CI/CD Grid</h3>
+                        <p>Engineered self-healing deployment pipelines using Jenkins and GitHub Actions, achieving
+                            99.99% successful build rates.</p>
+                        <ul class="project-tech-stack">
+                            <li>#Jenkins_Master</li>
+                            <li>#GitOps</li>
+                            <li>#Ansible</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-category="infra" data-aos="fade-up" data-aos-delay="300">
+                        <div class="icon-box"><i class="fa-solid fa-cubes"></i></div>
+                        <span class="project-tag">Container Architecture</span>
+                        <h3>K8s Cluster Orchestration</h3>
+                        <p>Scaling microservices using Kubernetes (EKS) with Helm charts for rapid, immutable
+                            deployments across zones.</p>
+                        <ul class="project-tech-stack">
+                            <li>#Kubernetes</li>
+                            <li>#Helm</li>
+                            <li>#AutoScaling</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card" data-category="auto" data-aos="fade-up" data-aos-delay="400">
+                        <div class="icon-box"><i class="fa-solid fa-database"></i></div>
+                        <span class="project-tag">Database Ops</span>
+                        <h3>Multi-Region DR Strategy</h3>
+                        <p>Streamlining MariaDB Galera Clusters with automated failover and point-in-time recovery for
+                            mission-critical data.</p>
+                        <ul class="project-tech-stack">
+                            <li>#MariaDB</li>
+                            <li>#Galera</li>
+                            <li>#DisasterRecovery</li>
+                        </ul>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card" data-category="sec" data-aos="fade-up" data-aos-delay="500">
+                        <div class="icon-box"><i class="fa-solid fa-user-shield"></i></div>
+                        <span class="project-tag">Cloud Security</span>
+                        <h3>Zero-Trust Identity Grid</h3>
+                        <p>Custom-built security layer enforcing least-privilege IAM roles and mTLS authentication for
+                            compliant access.</p>
+                        <ul class="project-tech-stack">
+                            <li>#IAM_Policy</li>
+                            <li>#ZeroTrust</li>
+                            <li>#SOC2</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container contact-container glass-panel" data-aos="zoom-in">
+                <div class="contact-info center-text">
+                    <h2 data-aos="fade-up">Let's Talk Business</h2>
+                    <p data-aos="fade-up" data-aos-delay="100">Ready to start your next premium project? Reach out now.
+                    </p>
+                    <div class="contact-icons-centered">
+                        <a data-dest="https://mail.google.com/mail/?view=cm&fs=1&to=kumarswamyvt@gmail.com&su=Professional%20Inquiry%20-%20Projects%20%26%20Collaboration&body=Hi%20Kumarswamy%2C%0A%0AI%20have%20seen%20your%20professional%20work%20and%20the%20projects%20you%20have%20completed.%20I%20have%20a%20similar%20idea%20and%20would%20like%20to%20work%20with%20you%20on%20it."
+                            class="contact-icon" title="Email" data-aos="fade-right" data-aos-delay="200">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a data-dest="https://wa.me/917760170152" target="_blank" rel="noopener noreferrer"
+                            class="contact-icon" title="WhatsApp" data-aos="fade-right" data-aos-delay="300">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                        <a data-dest="https://www.linkedin.com/in/mekarthik" target="_blank" rel="noopener noreferrer"
+                            class="contact-icon" title="LinkedIn" data-aos="fade-left" data-aos-delay="300">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a data-dest="https://www.instagram.com/iamhere_karthik" target="_blank"
+                            rel="noopener noreferrer" class="contact-icon" title="Instagram" data-aos="fade-left"
+                            data-aos-delay="200">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="bhuux-branding" data-aos="fade-right">
+                <span class="branding-prefix">PROUDLY DESIGNED BY</span>
+                <a data-dest="https://mail.google.com/mail/?view=cm&fs=1&to=bhuux.in@gmail.com&su=New%20Project%20Inquiry%20-%20BhuuX%20Studio&body=Hi%20BhuuX%2C%20I%20saw%20your%20elite%20engineering%20on%20Kumarswamy%20VT's%20portfolio.%20I'm%20extremely%20impressed%20and%20would%20like%20to%20discuss%20building%20a%20similar%20high-end%20project%20with%20you."
+                    class="bhuux-title">BhuuX Studio<span class="heartbeat-dot">.</span></a>
+            </div>
+
+            <div class="bhuux-core-wrap" data-aos="zoom-in" data-aos-delay="200">
+                <div class="bhuux-neural-core">
+                    <div class="core-layer layer-1"></div>
+                    <div class="core-layer layer-2"></div>
+                    <div class="core-layer layer-3"></div>
+
+                    <!-- Expanded Tactical Satellites -->
+                    <div class="core-satellite s1"><i class="fa-solid fa-microchip"></i></div>
+                    <div class="core-satellite s2"><i class="fa-solid fa-code"></i></div>
+                    <div class="core-satellite s3"><i class="fa-solid fa-atom"></i></div>
+                    <div class="core-satellite s4"><i class="fa-solid fa-server"></i></div>
+                    <div class="core-satellite s5"><i class="fa-solid fa-cloud-bolt"></i></div>
+                    <div class="core-satellite s6"><i class="fa-solid fa-shield-halved"></i></div>
+                </div>
+            </div>
+
+            <div data-aos="fade-left" data-aos-delay="100">
+                <p>&copy; 2025 KUMARSWAMY VT. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
